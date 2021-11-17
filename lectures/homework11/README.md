@@ -76,3 +76,7 @@ Huang, G., Liu, Z., Van Der Maaten, L. and Weinberger, K.Q., 2017. Densely conne
 <li id="he_deep_2016">
 He, K., Zhang, X., Ren, S. and Sun, J., 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).
 </li>
+
+<li id="santiagojr_2021">
+V. A. Santiago Júnior. Deep Leaning Made Easy, 2021. Acessed on: 11-12-2021. Available: <a href="https://github.com/vsantjr/DeepLearningMadeEasy">https://github.com/vsantjr/DeepLearningMadeEasy</a>.
+</li>

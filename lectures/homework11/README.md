@@ -12,19 +12,19 @@ This notebook contains exercise 11 (optional exercise 02). This exercise was pro
 <hr />
 
 * [1. DenseNet](#densenet)
-    * [1.1. Camada de entrada](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#input_layer)
-    * [1.2. Blocos densos](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#dense_blocks)
-    * [1.3. Camadas de transição](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#transition_layers)
-    * [1.4. Camada de saída](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#output_layer)
-* [2. Configurando experimentos](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#experiments)
-    * [2.1. Importação das bibliotecas e configurações](#import_libraries)
+    * [1.1. Input layer](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#input_layer)
+    * [1.2. Dense blocks](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#dense_blocks)
+    * [1.3. Transition layers](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#transition_layers)
+    * [1.4. Output layers](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#output_layer)
+* [2. Setting up experimets](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#experiments)
+    * [2.1. Import libraries and initial configurations](#import_libraries)
     * [2.2. Carregando dados](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#load_data)
-    * [2.3. Implementando a DenseNet](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#densenet_implementation)
-    * [2.4. Criando e compilando modelos](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#create_models)
-    * [2.5. Treinando e salvando DenseNet-121](#training_densenet121)
-    * [2.6. Treinando e salvando DenseNet-83](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#training_densenet83)
-    * [2.7. Comparação e avaliação dos modelos](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#evaluate_models)
-* [3. Referências](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#references)
+    * [2.3. DenseNet implementation](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#densenet_implementation)
+    * [2.4. Creating and compiling models](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#create_models)
+    * [2.5. Training and saving DenseNet-121](#training_densenet121)
+    * [2.6. Training and saving DenseNet-83](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#training_densenet83)
+    * [2.7. Evaluating models](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#evaluate_models)
+* [3. References](https://github.com/AdrianoPereira/CAP421/blob/main/lectures/homework11/DENSENET84_AND_DENSENET121.ipynb#references)
 
 **Author:** Adriano P. Almeida <<adriano.almeida@inpe.br>>
 <br />

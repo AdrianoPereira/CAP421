@@ -62,7 +62,7 @@ This notebook contains exercise 11 (optional exercise 02). This exercise was pro
 | DenseNet-83 | 3718538 | 43832 | 3762370 | 14,352 MB | 4236 s | 75,735% |
 
 <span style="display: block; text-align: center;" id="history">
-<strong>Table 1</strong>: Camada de entrada da DenseNet realçada.
+<strong>Table 1</strong>: Evaluate models.
 </span>
 
 

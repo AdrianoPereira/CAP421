@@ -14,8 +14,8 @@ TIF_IMG_PATH = os.path.join(PATH, f"data/PREPROCESSED/raw/PAR_AMAZONIA1_WFI_CROP
 PNG_IMG_PATH = TIF_IMG_PATH.replace('.tif', '.png')
 RESULT_PATH = os.path.join(PATH, f"results")
 
-WIDTH, HEIGHT = 128, 128
-N_SAMPLES = 2000
+WIDTH, HEIGHT = 64, 64
+N_SAMPLES = 5000
 CROP_IMG_PATHS = os.path.join(PATH, f"data/PREPROCESSED/CROPPED/{WIDTH}X{HEIGHT}")
 if not os.path.exists(CROP_IMG_PATHS):
     os.makedirs(CROP_IMG_PATHS)
@@ -89,3 +89,29 @@ plt.savefig(
     pad_inches=0.1
 )
 plt.show()
+
+
+# create GAN generator
+def create_generator_model():
+    model = tf.keras.Sequential()
+    model.add(tf.keras.layers.Dense(128*128, input_shape=(100,)))
+    model.add(tf.keras.layers.BatchNormalization())
+    model.add(tf.keras.layers.LeakyReLU())
+
+    model.add(tf.keras.layers.Reshape((128, 128, 1)))
+    model.add(tf.keras.layers.Conv2DTranspose(64, (5, 5), strides=(1, 1), padding='same', use_bias=False))
+    model.add(tf.keras.layers.BatchNormalization())
+    model.add(tf.keras.layers.LeakyReLU())
+
+    model.add(tf.keras.layers.Conv2DTranspose(32, (5, 5), strides=(2, 2), padding='same', use_bias=False))
+    model.add(tf.keras.layers.BatchNormalization())
+    model.add(tf.keras.layers.LeakyReLU())
+
+    model.add(tf.keras.layers.Conv2DTranspose(16, (5, 5), strides=(2, 2), padding='same', use_bias=False))
+    model.add(tf.keras.layers.BatchNormalization())
+    model.add(tf.keras.layers.LeakyReLU())
+
+    model.add(tf.keras.layers.Conv2DTranspose(1, (5, 5), strides=(2, 2), padding='same', use_bias=False))
+    model.add(tf.keras.layers.Activation('tanh'))
+    
+    return model
